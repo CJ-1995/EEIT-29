@@ -18,7 +18,7 @@ public class TestProduct {
 		}
 			
 		//Food f1 = (Food)item; //Product -->Food(?)  父類別轉子類別
-		
+		//123
 		
 		System.out.println(nb.desc());
 		//要先取得日歷Calendar 在取得日期 Data ,月份是0起算
