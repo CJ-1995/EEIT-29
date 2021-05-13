@@ -2,11 +2,6 @@ package interFace;
 
 public class Notebook extends Product implements Warrantable{
 	//Notebook 具備三種型態: Notebook ,Product ,Warrantable
-	@Override
-	public int 保固天數() {
-		// TODO Auto-generated method stub
-		return warranty;
-	}
 	
 	public int warranty;
 	
@@ -19,13 +14,18 @@ public class Notebook extends Product implements Warrantable{
 //		setName(name);
 //		setPrice(price);
 	}
+	
+	@Override
+	public int 保固天數() {
+		// TODO Auto-generated method stub
+		return warranty;
+	}
 	// @ annotation 註記 
 	@Override
 	public String desc() {
 		String info = super.desc();//名稱:%s,價錢:%d
-
-		return	 String.format("%s,保固:%d天",info,warranty) ;
-			}               
+			return	 String.format("%s,保固:%d天",info,warranty) ;
+	}               
 	
 	public int getWarranty() {
 		return warranty;
@@ -33,6 +33,5 @@ public class Notebook extends Product implements Warrantable{
 	public void setWarranty(int warranty) {
 		this.warranty = warranty;
 	}
-	
 }
 

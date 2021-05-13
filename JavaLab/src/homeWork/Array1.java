@@ -11,7 +11,7 @@ public class Array1 {
 		double[] x1 = {1.1 ,2.0 ,1.2 ,1.4 ,0.5 ,6.0};
 		double sum = x1[0] ;
 			for(double a : x1) {
-				sum=(sum > a ? sum=a : sum);
+				sum=(sum > a ? sum= a : sum);
 			}
 				System.out.println("最小值="+sum);
 		}
@@ -41,22 +41,15 @@ public class Array1 {
 				}
 		
 		//	聖誕樹  
-		int a = 4;
+		int line = 4;
 		int b = 4;
 //			決定層數
-		for(int i = 1;i <= a; i ++) {
+		for(int i = 1;i <= line; i ++) {
 //			決定*數
-			for(int j = 0 ;j < i ;j ++) {
-//					決定空白要幾道幾
-//					第一層 左邊三個空白   4   右邊三個空白 
-//					第二層 左邊兩個空白  3,4  右邊兩個空白
-//					第三層 左邊一個空白 2,3,4 右邊一個空白
-//										根本不用理右邊
-//					if(    ){				
-//              	if( a == b){
-//					System.out.print(" ");
-//					continue;
-//		}
+			for(int j = 1 ;j < line-1 ;j ++) {
+//					
+				System.out.print(" ");
+			}
 				System.out.print("*");
 				
 			}
@@ -65,4 +58,4 @@ public class Array1 {
 		
 		
 	}
-}
+

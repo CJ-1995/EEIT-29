@@ -1,7 +1,7 @@
 package interFace;
 
 public class SuperMan implements Lawyer,Accountant {
-		//三個型態 
+		//三個型態 SuperMan  Lawyer Accountant
 	@Override
 	public void 訴訟() {
 
@@ -14,6 +14,7 @@ public class SuperMan implements Lawyer,Accountant {
 	public static void main(String[] args) {
 
 	SuperMan sb = new SuperMan();
+	
 	sb.訴訟(); sb.報稅();
 		
 	}

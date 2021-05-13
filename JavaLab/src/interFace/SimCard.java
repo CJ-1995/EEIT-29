@@ -5,12 +5,19 @@ import java.util.Date;
 //SimCard: SimCard Product Expirable Warrantable四種型態
 public class SimCard extends Product implements Expirable,Warrantable{
  
+	private Date expireDate;
+	
+	public SimCard(String name,int price,Date expireDate) {
+		super(name,price);
+		this.expireDate = expireDate;
+	}
+
+	
 	@Override
 	public int 保固天數() {
 		// TODO Auto-generated method stub
 		return 7;
 	}
-	
 	@Override
 	public Date 最後期限() {
 		return expireDate;
@@ -21,14 +28,5 @@ public class SimCard extends Product implements Expirable,Warrantable{
         description = description +",到期日："+expireDate;
         return description;
     }
-	
-	private Date expireDate;
-	
-	public SimCard(String name,int price,Date expireDate) {
-			super(name,price);
-			this.expireDate = expireDate;
-		}
-
-	
-	}
+}
 

@@ -24,9 +24,9 @@ public class TestProduct {
 		//要先取得日歷Calendar 在取得日期 Data ,月份是0起算
 //		GregorianCalendar calendar = new GregorianCalendar(2021, 5, 13);
 //		GregorianCalendar calendar = new GregorianCalendar(2077,Calendar.MAY, 13);
-		Date data = Product.getDate(2077,5,3);
-		Food food = new Food("肉鬆",200,data);
-			
+		Date date = Product.getDate(2077,5,3);
+		Food food = new Food("肉鬆",200,date);
+//		drink redtea = new drink("紅茶拿鐵", 65, Product.getDate(2021, 5, 13));	
 		SimCard sim = new SimCard("日本漫遊",600,Product.getDate(2021, 4, 30));		
 		
 //		Product[] items = new Product[] {nb, food};
