@@ -16,8 +16,6 @@ public class Employee {
 	}*/
 
 
-
-
 	
 	@Override
 	public boolean equals(Object obj) {
@@ -29,14 +27,14 @@ public class Employee {
 		}
 		return false;
 	}
-
+/*
 	@Override
 	public int hashCode() {
 		//回傳代表物件的數字 通常會跟你equals中比較的屬性有關
 		//藉用String hashCode滿足java的規範
 		return id.hashCode();
 	}
-	
+	*/
 	@Override
 	protected void finalize() throws Throwable {
 		System.out.println("id="+id+",GC");
