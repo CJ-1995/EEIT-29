@@ -23,6 +23,20 @@ public class TestTreeSet {
 //			}
 //		};
 		
+		//lambda
+		Comparator com2 = ( o1, o2)->1;
+		
+		Comparator com1 = (Object o1,Object o2)->{
+			Integer i1 =(Integer) o1;
+			Integer i2 =(Integer) o2;
+			if(i1 == i2 ) { 
+				return 0;
+			}else
+				return (i1 > i2) ? 1 : -1;
+		};
+		
+		
+		
 		
 		Set set = new TreeSet(new Comparator() {
 			public int compare(Object o1, Object o2) {

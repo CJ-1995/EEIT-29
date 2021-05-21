@@ -5,10 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-import sun.reflect.generics.tree.ArrayTypeSignature;
+import java.util.function.Consumer;
 
 public class TestArrayList {
 
@@ -54,10 +51,20 @@ public class TestArrayList {
 		for(String item : list) {
 			System.out.println(item);
 		}
+		System.out.println("--------lambda-----------");
+		
+		Consumer<String> consumer =(item)->System.out.println(item);
+		
+		Consumer<String> consume2=System.out::print;
+		
+		
+		
+		list.forEach(consumer);
+	}
 		
 	}
 
-}
+
 
 
 

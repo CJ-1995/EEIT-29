@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
 import java.util.Map.Entry;
 
 public class TestHashMap {
@@ -38,9 +39,20 @@ public class TestHashMap {
 //			System.out.println(e);
 			
 		}
+		System.out.println("----------------forEach------------");
+		
+		BiConsumer<String, Integer> consumer = (key,valus)->{
+			System.out.println("key"+key+",value"+valus);
+		};
+		map.forEach(consumer);
+		//Method Reference
+		map.forEach(TestHashMap::aaa);
+		
 		
 		
 		
 	}
-
+	public static void aaa(String key,Integer valus) {
+		System.out.println("key"+key+",value"+valus);
+	}
 }

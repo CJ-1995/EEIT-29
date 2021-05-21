@@ -1,6 +1,6 @@
 package collection;
 // T 是typr
-public class Note<T> {
+public class Note<T extends Number> {
 	private  T contet;
 
 	public Note(T contet) {
