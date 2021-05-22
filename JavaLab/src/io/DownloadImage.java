@@ -14,7 +14,7 @@ public class DownloadImage {
 
 		URL url = new URL("https://graph.facebook.com/AppStore/picture?type=large");
 						//網址不可以有中文
-		try(InputStream opStream = url.openStream();
+		try(	InputStream opStream = url.openStream();
 				BufferedInputStream bis =new BufferedInputStream(opStream);
 				
 				FileOutputStream fos = new FileOutputStream("C:\\java\\圖.jpg");
