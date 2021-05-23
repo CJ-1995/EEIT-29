@@ -10,7 +10,7 @@ public class TestTreeSet {
         //Set ints = new TreeSet(); //預設是由小排到大
 
         //Anonymous class方式產生Comparator,Comparator會比較兩個物件，回傳要排前面或排後面
-        //回傳0表示排前面，回傳-1表示排後面,０表示兩物件一樣
+        //回傳-1表示排前面，回傳1表示排後面,０表示兩物件一樣
         Comparator comparator = new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
