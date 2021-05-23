@@ -14,19 +14,16 @@ public class IOTest {
     	    程式中除了MalformedURLException其它 Exception處理必須使用try catch不能直接由方法抛出。
     	    所有IO都必須close
            */
-    	String a = null; 
-    	try { 
     	String url = "http://iosnetworkdemo.appspot.com/json.jsp?msg=helloWorld"; 
-    	BufferedReader in = new BufferedReader(
-    			new InputStreamReader( 
-    	new URL(url).openConnection().getInputStream(), "UTF8"));
-    	
+    	try(
+    		BufferedReader in = new BufferedReader(
+    							new InputStreamReader( 
+    							new URL(url).openConnection().getInputStream(), "UTF8"));
+    			){ 
+    		String a = null; 
     	while ((a = in.readLine()) != null) { 
-    	System.out.println(a); 
+    		System.out.println(a); 
     	}
-    	in.close();
-    	} catch (MalformedURLException e) { 
-    		e.getStackTrace();
     	} catch (IOException e) {
     		e.getStackTrace();
     	} 

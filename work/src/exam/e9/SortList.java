@@ -2,7 +2,10 @@ package exam.e9;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
 
 import org.omg.CORBA.PUBLIC_MEMBER;
 
@@ -18,32 +21,25 @@ public class SortList  {
         List<Employee>list = Arrays.asList(e1, e2, e3, e4);
         //請利用List中的sort方法重新排序e1..e4，排序時薪水(salary)大的排前面，如果薪水一樣則commission大的排前面
        
+          Set<Employee> listPlus = new TreeSet<Employee>( new Comparator<Employee>(){
+            public int compare(Employee e1, Employee e2) {
+    			
+        		if(e1.getSalary() > e2.getSalary()) { 
+        				return -1;
+        			}else if (e1.getSalary() < e2.getSalary()) {
+        				return 1;
+        			}else 
+        				if(e1.getCommission() > e2.getCommission()){
+        					return -1;
+        				}else  {
+        					return 1;
+        				}
+        		}
+            });
+        listPlus.addAll(list);
         
-      
-        
-        
-       Comparator<Employee> com = new Comparator<Employee>(){
-        public int compare(Employee e1, Employee e2) {
-			
-    		if(e1.getSalary() > e2.getSalary()) { 
-    				return -1;
-    			}else if (e1.getSalary() < e2.getSalary()) {
-    				return 1;
-    			}else 
-    				if(e1.getCommission() > e2.getCommission()){
-    					return -1;
-    				}else  {
-    					return 1;
-    				}
-    		}
-        };
-       
-     
-       
-
-    }
-
-	
-
-		
+        for (Employee e : listPlus) {
+        	System.out.println(e);
+        }
+   }
 }
