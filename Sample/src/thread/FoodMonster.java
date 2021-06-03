@@ -1,7 +1,5 @@
 package thread;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 public class FoodMonster extends Thread{
 
     private volatile int food = 5;

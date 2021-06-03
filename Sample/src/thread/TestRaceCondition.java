@@ -3,8 +3,6 @@ package thread;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
 public class TestRaceCondition {
 
     public static int counter = 0;

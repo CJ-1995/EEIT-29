@@ -2,14 +2,10 @@ package exam.e9;
 
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
-import com.sun.xml.internal.messaging.saaj.soap.ver1_1.Envelope1_1Impl;
 
 public class SortList  {
     public static void main(String[] args) {

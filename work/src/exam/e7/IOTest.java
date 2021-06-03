@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.net.*; 
 
 public class IOTest {
-    public static void main(String[] args) throws MalformedURLException {
+    public static void main(String[] args) {
     		/* 
     		 http://iosnetworkdemo.appspot.com/json.jsp?msg=helloWorld，
     		會回應{"msg":"helloWorld","狀 態":"成功"}，編碼為UTF8 

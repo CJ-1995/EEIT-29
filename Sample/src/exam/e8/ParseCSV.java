@@ -19,19 +19,15 @@ public class ParseCSV {
         3.參考官方的User Guide處理此csv
         取得薪水的加總
          */
-    	Reader in = new FileReader("C:\\java\\Employees.csv");
+    	Reader in = new FileReader("C:\\java\\Employees.txt");
     	
     	Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(in);
     	int sum = 0;
     	for (CSVRecord record : records) {
-    	    String a = record.get(2);
-    	    int i = Integer.parseInt(a);
+    	    //String a = record.get(2);
+    	    int i = Integer.parseInt(record.get(2));
     	    sum +=i;
-    	    
-    	    }
+      	    }
     	System.out.println(sum);
-    	
-    	
-    	
     }
 }
