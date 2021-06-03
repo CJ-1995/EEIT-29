@@ -8,20 +8,20 @@ public class People {
         this.id = id;
         this.age = age;
     }
+    public void setId(String id) {
+    	this.id = id;
+    }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setAge(int age) {
+    	this.age = age;
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
 }
