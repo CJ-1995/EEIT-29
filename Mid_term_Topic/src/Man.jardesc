@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/JDBCfile/SQl.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/Mid_term_Topic/src/Man.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/Mid_term_Topic/.settings"/>
+        <javaElement handleIdentifier="=Mid_term_Topic/src&lt;{Java_Bean.java"/>
+        <javaElement handleIdentifier="=Mid_term_Topic/src&lt;{JDBC_Method.java"/>
+        <javaElement handleIdentifier="=Mid_term_Topic/src&lt;{Man.java"/>
+        <javaElement handleIdentifier="=Mid_term_Topic/src&lt;{Factory.java"/>
+    </selectedElements>
+</jardesc>
