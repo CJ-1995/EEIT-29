@@ -16,7 +16,7 @@ public class InputSQL {
 	 public static void main(String[] args) {
 		 //IO讀取CSV 
 		 try {
-			Reader fileReader = new FileReader("C:\\TW.Death\\Death.csv");
+			Reader fileReader = new FileReader("C:\\TW.Death\\Death-9.csv");
 			Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(fileReader);
 			
 			Connection conn = DriverManager.getConnection("jdbc:sqlserver://STUDENT-PC\\\\\\\\SQLEXPRESS:1433;databaseName=JDBC2;user=sa;password=123456");
