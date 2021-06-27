@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .tb1{
+            width:400px;
+            border:3px solid rgb(31, 31, 36);
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid rgb(37, 36, 34);
+        }
+        thead{
+            background-color:burlywood;
+            color: white;
+            text-transform: capitalize;
+        }
+        tbody{
+            background-color: violet;
+            text-align:center;
+            color: rgb(24, 26, 25);
+        }
+        /* : 偽元素 */
+        tbody tr:nth-child(2n){
+            background-color: yellow;
+        }
+        tbody tr:nth-child(2n+1){
+            background-color: yellowgreen;
+        }
+        tbody td:hover{
+            background-color: white;
+            color: violet;
+        }
+    </style>
+</head>
+<body> 
+    <h2>div裡的文字對齊</h2>
+    <!-- 適用於沒有標籤 且長度不超過div 因為是使用line-height -->
+    <div style="width:200px;height: 100px;;border:1px solid brown;line-height: 100px;">高度有指定</div>
+    <hr>
+    <!-- 是使用文字距離div距離 所以沒有限制 因為距離會增加 -->
+    <div style="width:200px;border:1px solid green;padding-top:50px;padding-bottom:50px;">高度沒有指定</div>
+    <table class="tb1">
+        <caption><h2>表格練習</h2></caption>
+        <thead>
+        <tr>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+            <th>column4</th>
+        </tr>
+        <tr>
+            <th colspan="2">column1</th>
+            <!-- <th>column2</th> -->
+            <th colspan="2">column3</th>
+            <!-- <th>column4</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td colspan="3">2</td>
+            <!-- <td>3</td> -->
+            <!-- <td>4</td> -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="3">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+</html>

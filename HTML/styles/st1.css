@@ -1,0 +1,18 @@
+h1 {
+    color: red;font-size:7px;
+}
+h1.st1 {
+    color: salmon;font-size:3em;text-decoration:underline;
+}
+.col1{
+    color: seagreen;
+}
+.col2{
+    color: skyblue;
+}
+.under{
+    text-decoration: underline;
+}
+.sty{
+    font-style: italic;
+}

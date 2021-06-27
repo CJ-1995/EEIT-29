@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face {
+    src: url(fonts/JustOldFashion.ttf);
+    font-family:font1;
+}
+.font1{
+    font-family:font1;
+}
+@font-face {
+    font-family:font2;
+    src: url(fonts/SCRIPTIN.ttf);
+}
+.font2{
+    font-family:font2;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
