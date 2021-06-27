@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS的使用 外掛樣式</title>
+    <!-- 相同的屬性 會因為執行順序而被覆蓋  順序由上到下 -->
+    <link rel="stylesheet" href="styles/st1.css">
+<style>
+    .sty1{font-style: normal;}
+    .theH4{color: chartreuse;font-size:2em;}
+    .theH4_col{color:purple;}
+    #theH4_col{color: red;}
+</style>
+    
+</head>
+
+<body>
+    <h1>apple</h1>
+    <h1 class="st1">orange</h1>
+    <h2>banana</h2>
+    <h3 class="col2 under">panda</h3>
+    <h3 class="col1 sty">grape</h3>
+    <!-- 標籤內  inline得執行最高  ID的執行高於CLASS -->
+    <h4 style="color: blue;" id="theH4_col" class="theH4 theH4_col">lemon</h4>
+</body>
+
+</html>

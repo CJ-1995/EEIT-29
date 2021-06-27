@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超連結元素</title>
+    <style>
+        /*寫法順序: link visited hover active */
+        /* .list a:link{color:grey;text-decoration:none;}
+        .list a:visited{color:blue;}
+        .list a:hover{text-decoration:underline;color:greenyellow;}
+        .list a:active{color:red;font-size:30px;} */
+        /* 按照階層 寫法 */
+        .list>li>a:link{color:grey;text-decoration:none;}
+        .list>li>a:visited{color:blue;}
+        .list>li>a:hover{text-decoration:underline;color:greenyellow;}
+        .list>li>a:active{color:red;font-size:30px;}
+    </style>
+</head>
+
+<body class="list">
+    <ul>
+        <li><a href="http://www.iiiedu.org.tw">首頁</a></li>
+        <li><a href="list.html">關於</a></li>
+        <li><a href="hyperlik.html">部落格</a></li>
+        <li><a href="mailto:Highchen918@gmail.com">聯絡</a></li>
+    </ul>
+    <a href="first.html">First</a>
+    <a href="list.html">List</a>
+    <a href="#book1">bookmark</a>
+    <a href="mailto:Highchen@gmail.com">mail to me</a>
+    <div>
+        <hl id="book1" style="background-color: rgb(253, 6, 6);">秘笈</hl>
+        <figure style="background-color: yellow;">
+            <img src="images/p1.jpg" alt="無緣之人阿 速速離去" title="大俠愛吃漢堡堡"> 
+            <a href="https://www.youtube.com/watch?v=t1i9lId8cO0"><img src="images/p1.jpg" alt="無緣之人阿 速速離去"
+                    title="大俠愛吃漢堡堡"> </a>
+            <figure>是看你骨骼驚奇才跟你說得 一般人通常是學不來得</figure>
+        </figure>
+
+
+        <P>
+            吃了之後考試都考一百分
+        </P>
+    </div>
+
+
+</body>
+
+</html>
